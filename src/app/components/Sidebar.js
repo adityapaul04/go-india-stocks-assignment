@@ -21,7 +21,7 @@ const Sidebar = () => {
         <div className="min-h-screen">
             <div
                 className={`${open ? "w-72" : "w-0 "
-                    } bg-[#1e375f] min-h-full pt-8 md:relative duration-300 absolute z-[999]`}
+                    } bg-[#1e375f] min-h-[125vh] pt-8 md:relative duration-300 absolute z-[999]`}
             >
                 <div
                     className="absolute cursor-pointer -right-4 top-[40%] w-6 h-24 bg-[#1e375f]  justify-center flex items-center"
