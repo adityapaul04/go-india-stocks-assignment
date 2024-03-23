@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.image-part {
+  min-height: 60%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boxShadow {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.spaceEvenly {
+  display: flex;
+  justify-content: space-between;
+  min-width: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.space {
+  padding: 10px;
+}
+
+.spacy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit {
+  font-weight: 600;
+  color: #cb5963;
+  background: #f7fafc;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 0.5rem;
+  width: 18rem;
+}
+
+@media (min-width: 768px) {
+  .mobile-view {
+      display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-view {
+      display: none;
+  }
+
+  .submit {
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      background: #1e375f;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+  }
+
+  .submit:hover {
+      background: #132038;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      border-bottom: 3px inset orangered;
+  }
+}
